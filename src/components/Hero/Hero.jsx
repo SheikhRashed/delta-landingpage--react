@@ -12,7 +12,7 @@ import {
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src='./assets/hero.mp4' />
+      <HeroVideo src='./assets/hero.mp4' autoPlay muted loop />
       <Container>
         <MainHeading>Your data is secure with us</MainHeading>
         <HeroText>

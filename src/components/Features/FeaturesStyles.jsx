@@ -57,10 +57,10 @@ export const FeatureImageWrapper = styled.div`
   margin-bottom: 1rem;
   justify-content: center;
   border: 2px solid #000;
-  svg {
+  /* svg {
     width: 40px;
     height: 40px;
-  }
+  } */
 `;
 export const FeatureName = styled.h3`
   font-weight: 600;
