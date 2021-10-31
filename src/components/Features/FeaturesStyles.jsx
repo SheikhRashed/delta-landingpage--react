@@ -17,13 +17,13 @@ export const FeatureTextWrapper = styled.div`
 
 export const FeatureWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.6rem;
   margin-top: 4rem;
-  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 
   @media screen and (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media screen and (max-width: 568px) {
@@ -31,23 +31,36 @@ export const FeatureWrapper = styled.div`
   }
 `;
 
+// Feature card
 export const FeatureColumn = styled(motion.div)`
+  padding: 24px;
   display: flex;
+  cursor: pointer;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
-  background: #f3f3f3;
-  padding: 10px;
-  box-shadow: 0 0 32px 8px #d0d0d0;
   border-radius: 20px;
+  background: #f3f3f3;
+  justify-content: center;
+  transition: all 0.3s linear;
+  &:hover {
+    box-shadow: 0 0 32px 8px #d0d0d0;
+  }
 `;
 
 export const FeatureImageWrapper = styled.div`
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
   border-radius: 50%;
+  border-radius: 50%;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center;
   border: 2px solid #000;
-
-  padding: 30px;
+  svg {
+    width: 40px;
+    height: 40px;
+  }
 `;
 export const FeatureName = styled.h3`
   font-weight: 600;
@@ -61,14 +74,14 @@ export const FeatureName = styled.h3`
   }
 `;
 export const FeatureText = styled.p`
-  margin: 1rem 0 auto;
+  margin-top: 16px;
   text-align: center;
   font-size: 0.9rem;
   line-height: 1.73;
   letter-spacing: 0.5px;
   color: #626881;
-
+  /* 
   @media screen and (max-width: 768px) {
     display: none;
-  }
+  } */
 `;
